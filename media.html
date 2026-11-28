@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML file media Example</title>
+    <style>
+        img.video{
+            width: 400px;
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>1. Normal Image</h2>
+    <img src="https://www.w3schools.com/html/img_chania.jpg" 
+         alt="City view"
+         width = "400" 
+         height = "300"
+         loading = "lazy">
+    <h2>2. Responsive Image using Picture</h2>
+    <picture>
+        <source media="(max-width: 100px)" 
+                srcset="https://www.w3schools.com/html/img_girl.jpg">
+
+        <img src="https://www.w3schools.com/html/img_chania.jpg" 
+             alt="Responsive image"
+             width = "400">
+    </picture>       
+    <h2>3. Audio</h2>
+    <audio controls loop preload="metadata">
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <h2>4. Video</h2>
+    <video width="400" controls>
+        poster="https://www.w3schools.com/html/img_chania.jpg">
+        preload="metadata">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" 
+                type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <h2>5. Autoplay Video</h2>
+    <video width="400" autoplay muted loop>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" 
+                type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+</body>
+</html>
